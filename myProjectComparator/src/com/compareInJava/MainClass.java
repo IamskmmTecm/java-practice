@@ -36,6 +36,14 @@ public class MainClass {
 			
 		});
 		
+//		Collections.sort(aemp, (o1, o2) -> {
+//				return o1.getName().compareTo(o2.getName());
+//			});
+		//// By lamda Exp. ////
+		Collections.sort(aemp, (o1, o2) -> {
+			return o1.getName().compareTo(o2.getName());
+		});
+
 		System.out.println(aemp);
 
 
