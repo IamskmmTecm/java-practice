@@ -27,7 +27,10 @@ public class MainClass {
 		
 		System.out.println(aemp);
 		
-		Collections.sort(aemp, new Comparator<Employee>() {
+		
+		// Collections is a class, Collection is an interface and Collection api is a concept
+		
+		Collections.sort(aemp, new Comparator<Employee>() {  // Comparator is functional interface
 
 			@Override
 			public int compare(Employee o1, Employee o2) {
@@ -39,11 +42,13 @@ public class MainClass {
 //		Collections.sort(aemp, (o1, o2) -> {
 //				return o1.getName().compareTo(o2.getName());
 //			});
+		
+		
 		//// By lamda Exp. ////
 		Collections.sort(aemp, (o1, o2) -> {
-			return o1.getName().compareTo(o2.getName());
+			return o1.getName().compareTo(o2.getName()); // this compareTo method from String class
 		});
-
+		
 		System.out.println(aemp);
 
 

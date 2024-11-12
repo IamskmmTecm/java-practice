@@ -1,6 +1,6 @@
 package com.compareInJava;
 
-public class Employee implements Comparable<Employee>{
+public class Employee implements Comparable<Employee>{ // Comparable is normal interface
 	
 	private int id = 0;
 	private String name = null;
@@ -44,7 +44,8 @@ public class Employee implements Comparable<Employee>{
 	}
 
 	@Override
-	public int compareTo(Employee that) {
-		return this.salary-that.salary;
+	public int compareTo(Employee that) {   // This compareTo method from Comparable interface
+//		return this.salary-that.salary;
+		return this.getName().compareTo(that.getName());
 	}
 }
